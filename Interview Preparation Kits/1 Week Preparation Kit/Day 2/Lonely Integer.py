@@ -1,13 +1,13 @@
 def lonelyinteger(a):
-    count = 0
-    b = list()
+    result = 0
+    duplicate_list = list()
     for i in range(len(a)):
         for j in range(len(a)):
             if (a[i] == a[j] and i != j):
-                b.append(a[i])
+                duplicate_list.append(a[i])
 
     for i in a:
         if (i not in b):
-            count = i
+            result = i
 
-    return count
+    return result
