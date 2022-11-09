@@ -7,7 +7,7 @@ def lonelyinteger(a):
                 duplicate_list.append(a[i])
 
     for i in a:
-        if (i not in b):
+        if (i not in duplicate_list):
             result = i
 
     return result
